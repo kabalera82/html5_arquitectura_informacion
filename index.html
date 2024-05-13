@@ -1,18 +1,20 @@
->>>>>>>> HEAD
 <!DOCTYPE html>
 <html lang="es-Es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Pagina Personal</title>
-    <link rel="icon" type:"image/x-icon" href="assets/Untitled.jpg" >
+    <meta name="description" content="Mi página web personal y familiar sobre mi y mi familia.">
+    <meta name="keywords" content="Padilla & Lobera, familia, niños, entretenimiento">
+    <meta name="author" content="Marcos Padilla">
+    <link rel="icon" type="image/x-icon" href="assets/Untitled.jpg" >
   </head>
 
   <body>
     <!--inicio de la cabecera-->
     <header id="header">
       <div id="logotipo">
-        <img src="assets/Untitled.jpg" alt="Logotipo" width="auto" height="300px"/>
+        <img src="assets/Untitled.jpg" alt="Logotipo personal de mi pagina web." width="auto" height="300px" loading="lazy"/>>
         <h1>
           <a href="index.html"> Mi Pagina Web </a>
         </h1>
@@ -20,7 +22,7 @@
     </header>
     <!--fin de la cabecera-->
     <!--inicio del menu de navegación-->
-    <nav id="nav">
+    <nav id="nav"aria-label="Menu principal">
       <ul>
         <li>
           <a href="index.html">Inicio</a>
@@ -82,30 +84,68 @@
             
         </article>
         <article id="Videos">
-            <h2>Videos de la familia</h2>
-            <video src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
-            <video src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
-            <video src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
-            <video src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
+          <h2>Videos de la familia</h2>
+          <ul>
+            <li>
+              <video width="320px" height="240px" controls>
+                <source src="assets/_import_61515457728ca4.92869732_720p_5000br.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </li>
+            <li>
+              <video width="320px" height="240px" controls>
+                <source src="assets/_import_615154aa11c1d4.44583395_720p_5000br.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </li>
+
+          </ul>
         </article>
+      
         <article id="Musica">
             <h2>Musica de la familia</h2>
-            <audio src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
-            <audio src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
-            <audio src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
-            <audio src="assets/2291.jpg" alt="Logotipo" width="150px" height="150px"/>
+            <ul>
+              <li>
+                <audio controls>
+                  <source src="assets/A Day to Remember - FiftySounds.mp3" type="audio/mp3">
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </li>
+              <li>
+                <audio controls>
+                  <source src="assets/Meeting Point.mp3" type="audio/mp3">
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </li>
+              <li>
+                <audio controls>
+                  <source src="assets/Spirit of Fire.mp3" type="audio/mp3">
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </li>
+            </ul>
+            
         </article>
         <article id="Contacto">
-            <h2>Contacto</h2>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
+          <h2>Contacto</h2>
+          <form action="" method="post">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+        </article>
 
 
         
@@ -115,7 +155,6 @@
 
   </body>
   <footer>
-    <h6>M & P Todos los derechos reservados 2024 Copyrigth</h6>
+    <h6>M & P webpage familiar </h6>
   </footer>
 </html>
-
